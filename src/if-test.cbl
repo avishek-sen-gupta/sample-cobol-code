@@ -24,7 +24,7 @@
                		88 V1      VALUE "E".
                		88 V2      VALUE "F".
        PROCEDURE DIVISION.
-       SECTION A.
+       A SECTION.
            MOVE 50 TO SOMEFRACTION.
            MOVE "ABCD" TO SOMETHING.
            MOVE "E" TO CONDI.
