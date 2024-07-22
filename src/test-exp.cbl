@@ -1,5 +1,11 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO-WORLD.
+029200 IDMS-CONTROL SECTION.                                            DCRAHMEN
+029300                                                                  DCRAHMEN
+029400 PROTOCOL. MODE IS IDMS-DC DEBUG                                  DCRAHMEN
+029500           IDMS-RECORDS MANUAL.                                   DCRAHMEN
+029600                                                                  DCRAHMEN
+029700                                                                  DCRAHMEN
        DATA DIVISION.
            WORKING-STORAGE SECTION.
                01 EXCHANGE-PART-01 PIC XXXX.
