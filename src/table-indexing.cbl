@@ -1,11 +1,12 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO-WORLD.
-029200 IDMS-CONTROL SECTION.                                            DCRAHMEN
-029300                                                                  DCRAHMEN
-029400 PROTOCOL. MODE IS IDMS-DC DEBUG                                  DCRAHMEN
-029500           IDMS-RECORDS MANUAL.                                   DCRAHMEN
-029600                                                                  DCRAHMEN
-029700                                                                  DCRAHMEN
+       ENVIRONMENT DIVISION.                                            
+       IDMS-CONTROL SECTION.                                            
+                                                                        
+       PROTOCOL. MODE IS IDMS-DC DEBUG                                  
+                 IDMS-RECORDS MANUAL.                                   
+                                                                        
+                                                                        
        DATA DIVISION.
            WORKING-STORAGE SECTION.
                01 SOME-GROUP-A.
@@ -16,6 +17,7 @@
                         20 LEVEL-20-B PIC XXXX OCCURS 2.
                01 SOME-GROUP-C.
                     10 LEVEL-10-C PIC XXXX OCCURS 2.
+       WORKING-STORAGE SECTION.                                         
        PROCEDURE DIVISION.
        SECTION-A SECTION.
            MOVE "0000" TO LEVEL-20-B(1 1).
@@ -26,8 +28,8 @@
            MOVE "AB" TO LEVEL-20-A(2)
            MOVE "EF" TO LEVEL-10-C(1)
            MOVE "GH" TO LEVEL-10-C(2)
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
+           OBTAIN NEXT ABC WITHIN EFG.
+           OBTAIN NEXT UVW WITHIN XYZ.
 
            DISPLAY "LEVEL-20-A = " SOME-GROUP-B
 

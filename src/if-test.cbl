@@ -1,11 +1,12 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO-WORLD.
-029200 IDMS-CONTROL SECTION.                                            DCRAHMEN
-029300                                                                  DCRAHMEN
-029400 PROTOCOL. MODE IS IDMS-DC DEBUG                                  DCRAHMEN
-029500           IDMS-RECORDS MANUAL.                                   DCRAHMEN
-029600                                                                  DCRAHMEN
-029700                                                                  DCRAHMEN
+       ENVIRONMENT DIVISION.                                            
+       IDMS-CONTROL SECTION.                                            
+                                                                        
+       PROTOCOL. MODE IS IDMS-DC DEBUG                                  
+                 IDMS-RECORDS MANUAL.                                   
+                                                                        
+                                                                        
        DATA DIVISION.
            WORKING-STORAGE SECTION.
                01 SOME-GROUP.
@@ -32,10 +33,10 @@
        PROCEDURE DIVISION.
        A SECTION.
            MOVE 50 TO SOMEFRACTION.
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
+           OBTAIN NEXT EFGH WITHIN IJKL.
            MOVE "ABCD" TO SOMETHING.
            MOVE "E" TO CONDI.
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
+           OBTAIN NEXT ABC WITHIN EFGH.
            IF (SOMEFRACTION = 10) OR >20 AND V1
     	       DISPLAY "AMAZE".
            IF SOMEFRACTION = 100 OR 30 OR 50 

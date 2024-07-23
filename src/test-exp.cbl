@@ -1,11 +1,12 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO-WORLD.
-029200 IDMS-CONTROL SECTION.                                            DCRAHMEN
-029300                                                                  DCRAHMEN
-029400 PROTOCOL. MODE IS IDMS-DC DEBUG                                  DCRAHMEN
-029500           IDMS-RECORDS MANUAL.                                   DCRAHMEN
-029600                                                                  DCRAHMEN
-029700                                                                  DCRAHMEN
+       ENVIRONMENT DIVISION.                                            
+       IDMS-CONTROL SECTION.                                            
+                                                                        
+       PROTOCOL. MODE IS IDMS-DC DEBUG                                  
+                 IDMS-RECORDS MANUAL.                                   
+                                                                        
+                                                                        
        DATA DIVISION.
            WORKING-STORAGE SECTION.
                01 EXCHANGE-PART-01 PIC XXXX.
@@ -78,7 +79,8 @@
                DISPLAY "AMAZE".
            IF SOMEFRACTION(1) = 100 OR 30 OR 50
                DISPLAY "AMAZE3".
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
-           OBTAIN NEXT V75RVIDET WITHIN V75SVIMVT-VIDET.
+           OBTAIN NEXT ABC WITHIN DEF.
+           OBTAIN NEXT GHI WITHIN JKL.
+           OBTAIN NEXT MNO WITHIN PQRS.
            STOP RUN.
 
